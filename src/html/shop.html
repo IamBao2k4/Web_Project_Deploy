@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Furniro</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="../../public/css/reset.css" />
+
+        <!-- Fonts Poppins -->
+        <link rel="stylesheet" href="../../public/fonts/stylesheet.css" />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="../../public/css/home.css" />
+
+        <!-- Tailwind CSS -->
+        <link rel="stylesheet" href="../../public/css/tailwind.css" />
+
+        <!-- Login CSS -->
+        <link rel="stylesheet" href="../css/header.css" />
+
+        <!-- Shop CSS -->
+        <link rel="stylesheet" href="../css/shop.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="content w-[1286px]">
+                <nav
+                    class="nav-bar flex justify-between items-center py-[30px]"
+                >
+                    <img
+                        src="../../public/img/logo.svg"
+                        alt="Furniro"
+                        loading="lazy"
+                    />
+
+                    <ul class="flex justify-between">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li>
+                            <a href="../../public/pages/aboutPage.html"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../../public/pages/contactPage.html"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="icon flex justify-between">
+                        <a href="./src/html/login.html" class="icon-profile"
+                            ><img
+                                src="../../public/img/profile.svg"
+                                alt="Profile"
+                                loading="lazy"
+                        /></a>
+                        <a href="#!" class="icon-search"
+                            ><img
+                                src="../../public/img/search.svg"
+                                alt="Search"
+                                loading="lazy"
+                        /></a>
+                        <a href="" class="icon-favorites"
+                            ><img
+                                src="../../public/img/favorites.svg"
+                                alt="Favorites"
+                                loading="lazy"
+                        /></a>
+                        <a href="" class="icon-cart"
+                            ><img
+                                src="../../public/img/cart.svg"
+                                alt="Cart"
+                                loading="lazy"
+                        /></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner">
+            <div class="banner-content">
+                <h1>Shop</h1>
+                <p>
+                    <a href="./login.html">Home</a> >
+                    <a href="./shop.html">Shop</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <button class="filter-btn">
+                <span class="material-icons">
+                    <img src="../../public/images/adjustments-horizontal.png" />
+                </span>
+                Filter
+            </button>
+            <div class="view-options">
+                <span class="material-icons">
+                    <img src="../../public/images/grid-icon.png" />
+                </span>
+                <span class="material-icons">
+                    <img src="../../public/images/list-icon.png" />
+                </span>
+            </div>
+            <p class="results-info">Showing 1–16 of 32 results</p>
+            <div class="show-options">
+                <label for="show-count">Show</label>
+                <input type="number" id="show-count" value="16" />
+            </div>
+            <div class="sort-options">
+                <label for="sort-by">Short by</label>
+                <select id="sort-by">
+                    <option value="default">Default</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- List products -->
+        <div id="grid-container">
+            <!-- <div id="grid-item">
+                <div id="item-hover">
+                    <p id="add-to-cart">Add to cart</p>
+                    <p id="view-details" onclick="viewDetails()">View details</p>
+                </div>
+                <div id="item-container">
+                    <img id="car-img" src="../../public/images/car-item.jpg">
+                    <div id="item-details">
+                        <h1 id="car-name">BMW 3 Series</h1>
+                        <p id="car-description"> Luxury car </p>
+                        <h2 id="car-price">$1000</h2>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Footer -->
+
+        <footer
+            class="footer border-t-[1px] border-solid border-t-[#d9d9d9] mt-[50px]"
+        >
+            <div class="content w-[1240px] pt-[48px]">
+                <div class="info">
+                    <div class="column">
+                        <h3 class="heading text-[2.4rem] font-bold text-[#000]">
+                            Funiro.
+                        </h3>
+                        <p class="desc w-[285px] font-normal text-[#9f9f9f]">
+                            400 University Drive Suite 200 Coral Gables,<br />
+                            FL 33134 USA
+                        </p>
+                    </div>
+
+                    <div class="column column-list">
+                        <h3 class="heading">Links</h3>
+                        <ul class="list">
+                            <li class="item"><a href="#!">Home</a></li>
+                            <li class="item"><a href="#!">Shop</a></li>
+                            <li class="item"><a href="#!">About</a></li>
+                            <li class="item"><a href="#!">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column column-list">
+                        <h3 class="heading">Help</h3>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#!">Payment Options</a>
+                            </li>
+                            <li class="item"><a href="#!">Returns</a></li>
+                            <li class="item">
+                                <a href="#!">Privacy Policies</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column column-list">
+                        <h3 class="heading">Newsletter</h3>
+                        <div class="input-container">
+                            <input
+                                type="email"
+                                placeholder="Enter Your Email Address"
+                                class="w-[200px] mr-[11px] border-b-[1px] border-solid border-b-[#000] text-[1.4rem]"
+                            />
+                            <button
+                                class="border-b-[1px] border-solid border-b-[#000] text-[1.4rem] font-medium"
+                            >
+                                SUBSCRIBE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-[48px]" />
+
+                <p class="all-rights my-[35px] font-normal text-[#000]">
+                    2023 furino. All rights reverved
+                </p>
+            </div>
+        </footer>
+    </body>
+
+    <script src="../scripts/shop.js"></script>
+</html>
